@@ -3,31 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site de Jogos</title>
+    <title>Site de Jogos - Hello Kitty</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Link para ícones de redes sociais -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Importando fonte fofa -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@700&family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="logo">
-            <h1>GameZone</h1>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Hello_Kitty_2010.png" alt="Hello Kitty Logo" class="kitty-logo">
+            <h1>Bem-vindo ao Mundo Hello Kitty!</h1>
         </div>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Jogos</a></li>
-                <li><a href="#">Sobre</a></li>
                 <li><a href="#">Classificação</a></li>
                 <li><a href="#">Login</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Seção de jogos e sistema de contas -->
+    <!-- Seção de introdução -->
     <section class="intro">
-        <h2>Explore nossos jogos incríveis!</h2>
-        <p>Crie uma conta, suba na classificação e ganhe recompensas!</p>
-        <button class="btn-primary">Criar Conta
+        <h2>Explore nossos jogos fofinhos!</h2>
+        <p>Crie sua conta, suba na classificação e ganhe prêmios incríveis!</p>
+        <button class="btn-primary">Criar Conta</button>
+        <button class="btn-primary">Login</button>
+    </section>
 
-        
+    <!-- Jogos em destaque -->
+    <section class="games">
+        <h2>Jogos em Destaque</h2>
+        <div class="game-card">
+            <img src="https://via.placeholder.com/200?text=Jogo+1" alt="Jogo 1">
+            <h3>Jogo 1</h3>
+            <p>Classificação: 4.5/5</p>
+            <button onclick="playGame('jogo1')">Jogar Agora</button>
+            <button onclick="shareGame('https://gamezone.com/jogo1')">Compartilhar</button>
+        </div>
+        <div class="game-card">
+            <img src="https://via.placeholder.com/200?text=Jogo+2" alt="Jogo 2">
+            <h3>Jogo 2</h3>
+            <p>Classificação: 4.7/5</p>
+            <button onclick="playGame('jogo2')">Jogar Agora</button>
+            <button onclick="shareGame('https://gamezone.com/jogo2')">Compartilhar</button>
+        </div>
+    </section>
+
+    <!-- Integração de redes sociais -->
+    <section class="social">
+        <h2>Nos siga nas redes sociais!</h2>
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Feito com ❤️ pela Hello Kitty</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,75 +1,95 @@
-/* Reset de estilos */
+/* Resetando e configurando o estilo básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo básico do corpo */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #fce4ec;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fce4ec; /* Fundo rosa claro */
     color: #fff;
     line-height: 1.6;
 }
 
-/* Header com logo e menu de navegação */
 header {
     background-color: #ec407a;
-    color: white;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
+    border-bottom: 5px solid #f48fb1;
+}
+
+header .kitty-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+    font-size: 3em;
+    font-family: 'Baloo Tamma 2', cursive;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin-top: 20px;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin: 0 20px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
     text-decoration: none;
-    font-size: 1.1em;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f48fb1;
+    transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #fce4ec;
+    background-color: #ec407a;
 }
 
-/* Seção de introdução e botão */
+/* Seção de introdução */
 .intro {
     text-align: center;
-    margin: 40px 0;
+    padding: 40px 20px;
+    background-color: #f8bbd0;
+    border-radius: 10px;
+    margin: 20px 0;
 }
 
 .intro h2 {
     font-size: 2.5em;
-    margin-bottom: 20px;
+    color: #ec407a;
+    margin-bottom: 15px;
+    font-family: 'Baloo Tamma 2', cursive;
 }
 
 .intro p {
-    font-size: 1.2em;
+    font-size: 1.3em;
+    margin-bottom: 20px;
 }
 
 .btn-primary {
     background-color: #ec407a;
     color: white;
     padding: 15px 30px;
-    border-radius: 25px;
-    font-size: 1.2em;
-    cursor: pointer;
+    border-radius: 50px;
+    font-size: 1.3em;
     margin: 10px;
     border: none;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
@@ -77,21 +97,24 @@ nav ul li a:hover {
     background-color: #f48fb1;
 }
 
-/* Cards de jogos */
+/* Jogos em destaque */
 .games {
     display: flex;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
+    margin-top: 40px;
 }
 
 .game-card {
     background-color: #f8bbd0;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 20px;
     text-align: center;
     width: 250px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
 }
 
 .game-card img {
@@ -99,15 +122,22 @@ nav ul li a:hover {
     height: auto;
     border-radius: 10px;
     margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.game-card img:hover {
+    transform: scale(1.1);
 }
 
 .game-card h3 {
-    font-size: 1.5em;
+    font-size: 1.6em;
     margin-bottom: 10px;
+    color: #ec407a;
+    font-family: 'Baloo Tamma 2', cursive;
 }
 
 .game-card p {
-    font-size: 1.1em;
+    font-size: 1.2em;
     margin-bottom: 15px;
 }
 
@@ -118,7 +148,7 @@ nav ul li a:hover {
     padding: 10px;
     width: 100%;
     border-radius: 5px;
-    font-size: 1.1em;
+    font-size: 1.2em;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -134,14 +164,15 @@ nav ul li a:hover {
 }
 
 .social-icons a {
-    font-size: 2em;
+    font-size: 2.5em;
     margin: 0 20px;
     color: #ec407a;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-    color: #fce4ec;
+    color: #f48fb1;
 }
 
 /* Footer */
@@ -151,5 +182,5 @@ footer {
     color: white;
     padding: 15px;
     margin-top: 40px;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
